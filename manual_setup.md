@@ -57,3 +57,5 @@ git rm vim/pack/shapeshed/start/vim-airline
 rm -Rf .git/modules/vim/pack/shapeshed/start/vim-airline
 git commit
 ```
+
+> Going native and reducing dependencies feels good!
