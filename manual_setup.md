@@ -1,4 +1,4 @@
-# Cài đặt Vim thuần bằng tay
+# Cài đặt Plus-in Vim thuần bằng tay
 Mặc định, thư mục `~/.vim` sẽ không có cấu trúc để cài Plugin, chúng ta sẽ tạo các thư mục bằng cách
 ```bash
 $ mkdir -p ~/.vim/pack/vendor/start
