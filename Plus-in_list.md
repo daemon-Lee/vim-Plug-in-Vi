@@ -18,3 +18,27 @@ syntax on
 filetype plugin indent on
 ```
 ![img](https://raw.githubusercontent.com/preservim/nerdtree/master/screenshot.png)
+
+# [Nerd commenter](https://github.com/preservim/nerdcommenter)
+Plugin comment đa dạng cho Vim
+```bash
+" Cài đặt với Vim-Plug
+Plug 'preservim/nerdcommenter'
+```
+![img](https://codelearn.io/Media/Default/Users/CoderToDev/Vim/nerdcommenter.gif)
+
+# [fzf](https://github.com/junegunn/fzf.vim)
+Plugin tìm kiếm file nhanh chóng
+```bash
+" Cài đặt với Vim-Plug
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+```
+
+# [vim-surround](https://github.com/tpope/vim-surround)
+Plugin thao tác nhanh với ngoặc, xml tags, ngoặc kép, dấu nháy ...
+```bash
+" Cài đặt với Vim-Plug
+Plug 'tpope/vim-surround'
+```
+![img](https://codelearn.io/Media/Default/Users/CoderToDev/Vim/1_b21C-wrVTTnx95YMKj1K8w.gif)
