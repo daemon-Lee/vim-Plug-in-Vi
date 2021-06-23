@@ -1,4 +1,4 @@
-# Cài đặt Plus-in Vim thuần bằng tay
+# Cài đặt Plug-in Vim thuần bằng tay
 Mặc định, thư mục `~/.vim` sẽ không có cấu trúc để lưu trữ Plug-in, chúng ta sẽ tạo các thư mục lưu trữ tên là `my-plugins` hoặc bất kỳ tên nào bạn muốn.
 ```bash
 $ mkdir -p ~/.vim/pack/my-plugins
