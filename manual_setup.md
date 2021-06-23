@@ -13,3 +13,5 @@ $ git clone --depth 1 \
 ```
 Nó có nghĩa là: clone plugin vào thư mục '~/.vim/pack/vendor/start/' với tên 'nerdtree'
 
+## Tham khảo
+https://shapeshed.com/vim-packages/
