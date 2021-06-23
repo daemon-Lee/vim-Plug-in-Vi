@@ -21,11 +21,19 @@ Thêm thư mục khác `opt` có thể được tạo để chứa các gói kh�
 .vim/pack/my-plugins/start/foobar/doc/foo.txt       	  " help for foo.vim
 .vim/pack/my-plugins/start/foobar/doc/tags          	  " help tags
 .vim/pack/my-plugins/opt/fooextra/plugin/extra.vim  	  " optional plugin, defines commands
-.vim/pack/my-plugins/opt/fooextra/autoload/extra.vim  	" loaded when extra command used
-.vim/pack/my-plugins/opt/fooextra/doc/extra.txt  	    " help for extra.vim
+.vim/pack/my-plugins/opt/fooextra/autoload/extra.vim      " loaded when extra command used
+.vim/pack/my-plugins/opt/fooextra/doc/extra.txt  	  " help for extra.vim
 .vim/pack/my-plugins/opt/fooextra/doc/tags  	          " help tags
 ```
 Với `foobar` và `fooextra` là thên các plugins
+
+## Quản lý packages
+Chức năng mới trong vim không thêm bất cứ thứ gì để quản lý các plugin; nó chỉ tải chúng. Bạn quản lý plugin như thế nào là tùy thuộc vào bạn.
+
+Ở dạng đơn giản nhất, bạn chỉ có thể di chuyển một plugin vào thư mục `start` và nó sẽ được tải tự động. Bạn quản lý nó như thế nào là tùy thuộc vào bạn.
+
+
+
 
 Ví dụ khi cài NERDTree ( Sidebar chọn file cho Vim ), ta thực hiện:
 ```bash
