@@ -4,7 +4,7 @@ Tổ hợp một số cài đặt cho vim mình hay dùng
 ## Danh sách các thiết lập
 - Những thiết lập cơ bản. [Link](bacis_setup.md)
 ### Cài đặt Plugin cho Vim
-- Cài đặt Vim thuần bằng tay
+- Cài đặt Vim thuần bằng tay [Link](manual_setup.md)
 - Cài đặt Vim bằng các gói quản lý Plugin
 
 ## Nguồn tham khảo
