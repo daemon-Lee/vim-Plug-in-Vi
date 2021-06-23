@@ -32,16 +32,28 @@ Chức năng mới trong vim không thêm bất cứ thứ gì để quản lý 
 
 Ở dạng đơn giản nhất, bạn chỉ có thể di chuyển một plugin vào thư mục `start` và nó sẽ được tải tự động. Bạn quản lý nó như thế nào là tùy thuộc vào bạn.
 
-
-
-
-Ví dụ khi cài NERDTree ( Sidebar chọn file cho Vim ), ta thực hiện:
+## Thêm packages
+Dưới đây là một ví dụ về cách thêm một gói bằng cách sử dụng phương pháp tiếp cận của Vim vào các gói và git submodules.
 ```bash
-$ git clone --depth 1 \
-  https://github.com/preservim/nerdtree.git \
-  ~/.vim/plugged/nerdtree
+cd ~/dotfiles
+git submodule init
+git submodule add https://github.com/vim-airline/vim-airline.git vim/pack/shapeshed/start/vim-airline
+git add .gitmodules vim/pack/shapeshed/start/vim-airline
+git commit
 ```
-Nó có nghĩa là: clone plugin vào thư mục '~/.vim/pack/vendor/start/' với tên 'nerdtree'
 
-## Tham khảo
-https://shapeshed.com/vim-packages/
+## Updating packages
+Để cập nhật packages có thể dùng git submodules.
+```bash
+git submodule update --remote --merge
+git commit
+```
+
+## Xóa packages
+Xóa một package chỉ cần xóa git submodules.
+```bash
+git submodule deinit vim/pack/shapeshed/start/vim-airline
+git rm vim/pack/shapeshed/start/vim-airline
+rm -Rf .git/modules/vim/pack/shapeshed/start/vim-airline
+git commit
+```
