@@ -1,5 +1,5 @@
 # Cài đặt Plus-in Vim thuần bằng tay
-Mặc định, thư mục `~/.vim` sẽ không có cấu trúc để lưu trữ Plug-in, chúng ta sẽ tạo các thư mục lưu trữ tên là `my-plusins` hoặc bất kỳ tên nào bạn muốn.
+Mặc định, thư mục `~/.vim` sẽ không có cấu trúc để lưu trữ Plug-in, chúng ta sẽ tạo các thư mục lưu trữ tên là `my-plugins` hoặc bất kỳ tên nào bạn muốn.
 ```bash
 $ mkdir -p ~/.vim/pack/my-plugins
 ```
@@ -35,10 +35,11 @@ Chức năng mới trong vim không thêm bất cứ thứ gì để quản lý 
 ## Thêm packages
 Dưới đây là một ví dụ về cách thêm một gói bằng cách sử dụng phương pháp tiếp cận của Vim vào các gói và git submodules.
 ```bash
-cd ~/dotfiles
+cd ~/.vim/pack
+git init
 git submodule init
-git submodule add https://github.com/vim-airline/vim-airline.git vim/pack/shapeshed/start/vim-airline
-git add .gitmodules vim/pack/shapeshed/start/vim-airline
+git submodule add https://github.com/vim-airline/vim-airline.git my-plugins/start/vim-airline
+git add .gitmodules my-plugins/start/vim-airline
 git commit
 ```
 
@@ -52,9 +53,9 @@ git commit
 ## Xóa packages
 Xóa một package chỉ cần xóa git submodules.
 ```bash
-git submodule deinit vim/pack/shapeshed/start/vim-airline
-git rm vim/pack/shapeshed/start/vim-airline
-rm -Rf .git/modules/vim/pack/shapeshed/start/vim-airline
+git submodule deinit my-plugins/start/vim-airline
+git rm my-plugins/start/vim-airline
+rm -Rf .git/modules/my-plugins/start/vim-airline
 git commit
 ```
 
