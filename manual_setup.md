@@ -1,7 +1,7 @@
 # Cài đặt Plus-in Vim thuần bằng tay
-Mặc định, thư mục `~/.vim` sẽ không có cấu trúc để cài Plugin, chúng ta sẽ tạo các thư mục bằng cách
+Mặc định, thư mục `~/.vim` sẽ không có cấu trúc để lưu trữ Plug-in, chúng ta sẽ tạo các thư mục lưu trữ tên là `my-plusins` hoặc bất kỳ tên nào bạn muốn.
 ```bash
-$ mkdir -p ~/.vim/plugged
+$ mkdir -p ~/.vim/pack/my-plugins
 ```
 Sau đó thêm các plugin muốn cài vào thư mục đó, nó sẽ load tự động khi mở vim lên.
 
