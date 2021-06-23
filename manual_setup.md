@@ -3,7 +3,29 @@ Mặc định, thư mục `~/.vim` sẽ không có cấu trúc để lưu trữ 
 ```bash
 $ mkdir -p ~/.vim/pack/my-plugins
 ```
-Sau đó thêm các plugin muốn cài vào thư mục đó, nó sẽ load tự động khi mở vim lên.
+Trong thư mục này, cần thêm một thư mục `start` nữa để giữ các plugin. Vim sẽ chọn bất kỳ gói nào được thêm vào thư mục này và tự động tải các plugin.
+
+Thêm thư mục khác `opt` có thể được tạo để chứa các gói không được tải tự động. Các gói được thêm vào thư mục `opt` có thể được tải bằng cách sử dụng
+
+```bash
+:packadd packagename
+```
+Điều này có thể hữu ích cho việc gỡ lỗi hoặc thêm một plugin đặc biệt.
+
+## Bố cục thư mục
+
+```bash
+.vim/pack/my-plugins/start/foobar/plugin/foo.vim    	  " always loaded, defines commands
+.vim/pack/my-plugins/start/foobar/plugin/bar.vim    	  " always loaded, defines commands
+.vim/pack/my-plugins/start/foobar/autoload/foo.vim  	  " loaded when foo command used
+.vim/pack/my-plugins/start/foobar/doc/foo.txt       	  " help for foo.vim
+.vim/pack/my-plugins/start/foobar/doc/tags          	  " help tags
+.vim/pack/my-plugins/opt/fooextra/plugin/extra.vim  	  " optional plugin, defines commands
+.vim/pack/my-plugins/opt/fooextra/autoload/extra.vim  	" loaded when extra command used
+.vim/pack/my-plugins/opt/fooextra/doc/extra.txt  	    " help for extra.vim
+.vim/pack/my-plugins/opt/fooextra/doc/tags  	          " help tags
+```
+Với `foobar` và `fooextra` là thên các plugins
 
 Ví dụ khi cài NERDTree ( Sidebar chọn file cho Vim ), ta thực hiện:
 ```bash
