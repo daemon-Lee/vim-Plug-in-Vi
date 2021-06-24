@@ -116,3 +116,7 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 ```
+3. Cài đặt Plugins:
+Để cài đặt, chúng ta khởi chạy `vim` và gõ lệnh `:PluginInstall`
+
+Hoặc cài đặt thông qua command line: `vim +PluginInstall +qall`
