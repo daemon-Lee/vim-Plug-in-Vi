@@ -63,4 +63,4 @@ Ngoài ra còn một số lệnh như:
 - PlugStatus: Xem trạng thái của các Plugin
 - PlugSnapshot: Tạo bản backup phòng trường hợp bị mất
 
-## Vundel
+## [Vundel](https://github.com/VundleVim/Vundle.vim)
